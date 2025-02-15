@@ -1,0 +1,74 @@
+@import "../../vars.css";
+
+.navbar {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 61px;
+    z-index: 2;
+    margin: 0 10%;
+}
+/*space out the portfolio text to left and elements to the right
+//z-index; need for floating elements and want to show above those elemtns 
+//horizontally more space out 10%*/
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text)
+}
+
+.menu {
+    display: flex;
+}
+
+.menuItems {
+    gap: 47px;
+    display: none; /* Hide menu by default */
+    list-style: none;
+    padding: 0;
+}
+
+.menuItems a {
+    font-size: 30px;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 930px) {
+    .navbar {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        
+    }
+    .menu {
+        position: absolute; 
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+}
+
+.show {
+    display: flex; /*when menu is open*/
+    z-index: 1;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(
+        0deg, 
+        rgba(25, 55, 109, 0.2) 0%,
+        rgba(25, 55, 109, 1) 100%
+        );
+        padding: 24px 33px; 
+        box-shadow: 0 0 4px 0 rgba(0,0,0, 0.25);
+}

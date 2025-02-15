@@ -1,0 +1,50 @@
+[
+    {
+        "role": "Project Manager",
+        "organisation": "Blockchain Club",
+        "startDate": "Sept, 2023",
+        "endDate": "Present",
+        "experiences": [
+            "Led blockchain projects, coordinating teams to ensure timely delivery.",
+            "Managed cross-functional collaboration between developers and designers.",
+            "Researched emerging trends in blockchain applications."
+        ],
+        "imageSrc": "history/blockchain.png"
+    },
+    {
+        "role": "UX Designer",
+        "organisation": "Design@UCI",
+        "startDate": "Jan, 2023",
+        "endDate": "Present",
+        "experiences": [
+            "Designed intuitive and user-friendly interfaces for various projects.",
+            "Conducted user research to improve accessibility and usability.",
+            "Developed prototypes and wireframes using Figma and other design tools."
+        ],
+        "imageSrc": "history/designuci.png"
+    },
+    {
+        "role": "QA Tester",
+        "organisation": "UCI Office of Information Technology",
+        "startDate": "Aug, 2022",
+        "endDate": "Present",
+        "experiences": [
+            "Tested web applications for functionality, performance, and accessibility.",
+            "Reported and tracked software bugs using Jira.",
+            "Collaborated with developers to ensure high-quality releases."
+        ],
+        "imageSrc": "history/oit.png"
+    },
+    {
+        "role": "Web Developer",
+        "organisation": "Webjam @ ICSSC",
+        "startDate": "Jan, 2022",
+        "endDate": "Present",
+        "experiences": [
+            "Developed responsive and optimized websites for clients.",
+            "Implemented front-end and back-end solutions using modern web technologies.",
+            "Collaborated with designers to bring UI/UX concepts to life."
+        ],
+        "imageSrc": "history/webjam.png"
+    }
+]
