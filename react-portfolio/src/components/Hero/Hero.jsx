@@ -11,7 +11,6 @@ const Hero = () => {
         </p>
         <a href="mailto:evienn@uci.edu" className={styles.contactBtn}>Contact me here</a>
     </div>
-    <img src="/profile-circle.svg" className={styles.heroImg} alt="Profile Icon" />  
     <div className={styles.topBlur}/>
     <div className={styles.bottomBlur}/>
     </section>
