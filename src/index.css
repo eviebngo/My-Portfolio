@@ -1,0 +1,14 @@
+/* Styling for every single element in our webpage */
+* {
+  box-sizing: border-box;
+  /* border is considered when calculating the height and width of the object */
+  margin: 0;
+  padding: 0;
+  /* margin and padding 0 for consistent layout */
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  /* Opts for outfit but if not available uses other fonts */
+}
+
+html {
+  scroll-behavior: smooth;
+}

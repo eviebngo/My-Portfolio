@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="loading.css"> <!-- Ensure this path is correct -->
+  <style>
+    /* Body styles */
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #2B3E34;
+        ; /* Keep the yellow background during transition */
+        transition: opacity x1s ease-in-out; /* Smooth opacity transition for fade-out */
+    }
+
+    /* Loading screen styles */
+    #loadingScreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #2B3E34; /* Yellow background for the loading screen */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+        z-index: 1000; /* Ensure loading screen is on top */
+        transition: opacity 1s ease, visibility 0s 1.5s; /* Fade out and then hide */
+    }
+
+    /* Cup animation remains the same */
+    .cup {
+        height: 140px;
+        width: 180px;
+        border: 6px solid white;
+        position: absolute; /* Keeps it positioned relative to its parent container */
+        top: 50%; /* Vertically center */
+        left: 50%; /* Horizontally center */
+        transform: translate(-50%, -50%); /* Center the cup exactly at the center */
+        border-radius: 0px 0px 70px 70px;
+        background: url(https://i.ibb.co/cCLQHwz/wave.png);
+        box-shadow: 0px 0px 0px 6px white;
+        background-size: 150% 170%;
+        filter: sepia(100%) saturate(300%) brightness(30%) hue-rotate(95deg);
+        background-repeat: repeat-x;
+        animation: fill 2.5s forwards;
+    }
+    .handle {
+      height: 70px;
+      width: 40px;
+      background-color: transparent;
+      border: 10px solid white;
+      position: relative;
+      left: 172px;
+      top: 10px;
+      border-radius: 0px 25px 80px 11px;
+    }
+
+
+    @keyframes fill {
+        0% {
+            background-position: 0px 140px;
+        }
+        20% {
+            background-position: -450px 100px;
+        }
+        40% {
+            background-position: -900px 50px;
+        }
+        80% {
+            background-position: -1350px -90px;
+        }
+        100% {
+            background-position: 0px 140px;
+        }
+    }
+
+    /* Main content (portfolio) styles */
+    #mainContent {
+        opacity: 0;
+        visibility: hidden; /* Initially hidden */
+        transition: opacity 1s ease-in-out; /* Smooth fade-in for main content */
+        position: relative;
+        z-index: 1; /* Ensure main content is below the loading screen initially */
+    }
+
+    /* Portfolio-specific styles */
+    #root {
+        background-color: #2B3E34; /* White background for the portfolio */
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        display: flex;
+        font-family: Outfit, Arial, Helvetica, sans-serif;
+        height: auto;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading container covering the entire screen -->
+  <div id="loadingScreen">
+    <div class="cup">
+      <div class="handle"></div>
+    </div>
+  </div>
+
+  <!-- Portfolio content -->
+  <div id="mainContent">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </div>
+
+  <script>
+    // JavaScript to hide the loading screen and show the main content after the animation
+    window.onload = function () {
+        // Wait for 2.5 seconds (time of the loading animation)
+        setTimeout(function () {
+            // Fade out the entire loading screen
+            document.getElementById('loadingScreen').style.opacity = 0;
+            
+            // After fading out the loading screen, hide it completely
+            setTimeout(function () {
+                document.getElementById('loadingScreen').style.visibility = "hidden";
+                
+                // Make the main content visible and start fading it in
+                document.getElementById('mainContent').style.visibility = "visible"; // Make content visible
+                document.getElementById('mainContent').style.opacity = 1; // Smooth fade-in for the main content
+
+                document.body.style.overflowY = "auto";  // ✅ Only allow vertical scrolling
+                document.body.style.overflowX = "hidden"; // ✅ Remove horizontal scrolling
+            }, 1500); // Wait for the fade-out transition to complete (1.5s)
+        }, 2500); // Wait for the loading animation to complete (2.5s)
+    }
+  </script>
+</body>
+</html>

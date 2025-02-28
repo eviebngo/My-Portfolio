@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 300px;
+}
+
+.container {
+    width: 100vw;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    background-color: inherit;
+    position: relative;
+}
+
+
+/* ✅ Updated Grid Layout */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ✅ Two equal columns */
+    grid-template-rows: auto auto auto auto; /* ✅ Four rows */
+    gap: 1em;
+    width: 100%;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* ✅ Two Side-by-Side Boxes (First Row) */
+.hero {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 300px;
+    background-color: #ff6b6b !important;
+}
+
+.contact {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 300px;
+    background-color: #ffd166 !important;
+}
+
+/* ✅ Long Box (Below Box Left & Box Right) */
+.experience {
+    flex-wrap: wrap;
+    grid-column: 1 / 3; /* ✅ Spans both columns */
+    grid-row: 2 / 3; /* ✅ Second row */
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    background-color: #0071ff !important;
+    overflow: visible !important;
+}
+
+/* ✅ Vertical Strip (Left Side, Below Long Box) */
+.verticalStrip {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5; /* ✅ Spans two rows */
+    width: 100%;
+    height: 300px;
+    background-color: #06d6a0 !important;
+}
+
+/* ✅ Two Stacked Boxes (Right Side) */
+.smallTop {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 150px;
+    background-color: #118ab2 !important;
+}
+
+.smallBottom {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    width: 100%;
+    height: 150px;
+    background-color: #ef476f !important;
+}
+
+/* ✅ Default Bento Item Styling */
+.bentoItem {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "YelperMe",
+    "imageSrc": "project.png",
+    "description": "A Yelp API-powered app built to provide real-time restaurant and tourist spot suggestions with a ReactJS front-end and Python backend for secure and seamless data handling.",
+    "skills": ["React", "Node.js", "Express", "Python", "Yelp API", "HTML", "CSS", "JavaScript"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Skintel",
+    "imageSrc": "Skintel.png",
+    "description": "A UX/UI design project where insights from surveys and interviews were applied to design a skincare app using Figma, focusing on intuitive UI and seamless user experience.",
+    "skills": ["Figma", "UI Design", "UX Research", "Wireframing", "Prototyping", "Survey Analysis"],
+    "demo": "https://www.figma.com/proto/KSoc5AVuEoF2toZlgH5c9t/Skintel?node-id=272-2602&p=f&t=dTWeIj3C86oUthpM-1&scaling=scale-down&content-scaling=fixed&page-id=28%3A139&starting-point-node-id=272%3A2602&show-proto-sidebar=1",
+    "source": "https://www.figma.com/design/KSoc5AVuEoF2toZlgH5c9t/Skintel?node-id=28-139&t=DJDgHEwFLitqQZlc-1"
+  },
+  {
+    "title": "Go, Zot, Go!",
+    "imageSrc": "project.png",
+    "description": "A Google Maps-based commuter app built to recommend peer-voted routes and perform cost analysis for UCI students, utilizing custom polylines and API queries for optimized routing.",
+    "skills": ["React", "Node.js", "Express", "Google Maps API", "API Queries", "Polylines", "JavaScript"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]

@@ -1,0 +1,48 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    min-height: 350px;
+
+    flex-grow: 1;
+
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+    max-width: 80%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4B382A; /* Espresso brown */
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: #6D5845;
+    margin-bottom: 1rem;
+}
+
+.contactBtn {
+    text-decoration: none;
+    background-color: #A3C585;
+    color: white;
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.contactBtn:hover {
+    background-color: #8FAF72; /* Slightly darker matcha */
+}
