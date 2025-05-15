@@ -1,0 +1,41 @@
+.bannerWrapper {
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
+  padding: 0.5rem 0;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 12px 0 #a6c1ee22;
+}
+
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.marqueeText {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marqueeAnim 18s linear infinite;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4a4e69;
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 8px #fff8, 0 1px 2px #a6c1ee33;
+}
+
+.marqueeChunk {
+  margin: 0 2.5rem;
+  display: inline-block;
+}
+
+@keyframes marqueeAnim {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} 

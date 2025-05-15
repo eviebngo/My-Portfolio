@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2B3E34; /* Soft beige */
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
@@ -43,5 +42,12 @@
   .navLinks a:hover {
     background-color: #486858; /* Matcha green */
     color: rgb(181, 184, 155);
+  }
+  
+  .active {
+    background-color: #fbc2eb;
+    color: #a6c1ee !important;
+    font-weight: bold;
+    box-shadow: 0 2px 8px 0 #a6c1ee33;
   }
   

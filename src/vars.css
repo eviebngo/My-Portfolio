@@ -2,11 +2,11 @@
     /*COLORS*/
     --color-text: #E6DED1;
     /*this is the color of the word portfolio for the title*/
-    --color-primary: #2B3E34;
+    --color-primary: #a6c1ee;
     --color-secondary: #3F4E40;
     --color-dark: #B5B89B;
-    --color-bg: #2B3E34;
+    --color-bg: #fff;
      
-    /* Fronts */
+    /* Fonts */
     --font-roboto: "Roboto";
 }
