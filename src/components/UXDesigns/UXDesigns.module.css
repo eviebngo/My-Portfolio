@@ -1,0 +1,90 @@
+.scatterSection {
+  width: 100vw;
+  min-height: 520px;
+  position: relative;
+  background: #f8fafd;
+  overflow: hidden;
+  padding: 4rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #a6c1ee;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  z-index: 10;
+}
+
+.scatterContainer {
+  width: 100vw;
+  height: 500px;
+  position: relative;
+  display: block;
+}
+
+.radialBg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1200px;
+  height: 800px;
+  background: radial-gradient(circle, #e9f0fb 0%, #f8fafd 80%, transparent 100%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.deviceImg {
+  position: absolute;
+  width: 220px;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px 0 #a6c1ee33, 0 2px 16px 0 #fbc2eb22, 0 0 0 8px #fff;
+  background: #fff;
+  z-index: 2;
+  user-select: none;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .scatterContainer {
+    height: 350px;
+  }
+  .deviceImg {
+    width: 120px;
+    height: 240px;
+    border-radius: 18px;
+  }
+  .radialBg {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .scatterSection {
+    min-height: 320px;
+    padding: 2rem 0 3rem 0;
+  }
+  .scatterContainer {
+    height: 200px;
+  }
+  .deviceImg {
+    width: 70px;
+    height: 140px;
+    border-radius: 10px;
+  }
+  .radialBg {
+    width: 300px;
+    height: 200px;
+  }
+  .sectionTitle {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+} 

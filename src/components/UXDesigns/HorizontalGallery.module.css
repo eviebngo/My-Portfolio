@@ -1,0 +1,117 @@
+.horizontalSection {
+  width: 100vw;
+  min-height: 600px;
+  background: #f8fafd;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #a6c1ee;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  z-index: 10;
+}
+
+.horizontalScroll {
+  width: 100vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  position: relative;
+}
+.horizontalScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.galleryTrack {
+  position: relative;
+  height: 600px;
+  width: 1800px;
+}
+
+.galleryImg {
+  position: absolute;
+  box-shadow: 0 8px 32px 0 #a6c1ee33, 0 2px 16px 0 #fbc2eb22, 0 0 0 8px #fff;
+  border-radius: 24px;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+  background: #fff;
+  user-select: none;
+  pointer-events: none;
+}
+
+.galleryImg:hover {
+  transform: scale(1.04) !important;
+  box-shadow: 0 16px 48px 0 #a6c1ee55, 0 4px 20px 0 #fbc2eb33, 0 0 0 12px #fff;
+}
+
+@media (max-width: 900px) {
+  .galleryTrack {
+    height: 350px;
+    width: 1200px;
+  }
+  .galleryImg {
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .horizontalSection {
+    min-height: 320px;
+    padding: 2rem 0 3rem 0;
+  }
+  .galleryTrack {
+    height: 200px;
+    width: 800px;
+  }
+  .galleryImg {
+    border-radius: 8px;
+  }
+  .sectionTitle {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.stickyTitle {
+  position: fixed;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%, 0);
+  width: max-content;
+  font-size: 7vw;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #222;
+  background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+  line-height: 1.1;
+  z-index: 9999;
+  pointer-events: none;
+  user-select: none;
+  transition: font-size 0.3s, line-height 0.3s;
+}
+
+@media (max-width: 900px) {
+  .stickyTitle {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .stickyTitle {
+    font-size: 14vw;
+    margin-bottom: 0.5rem;
+  }
+} 
