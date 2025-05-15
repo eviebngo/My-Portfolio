@@ -55,8 +55,8 @@ function App() {
         <Hero animate={showContent} />
         <About />
         <UXDesigns />
-        <Skills />
         <HorizontalGallery />
+        <Skills />
         <Projects />
         <Contact />
       </main>
