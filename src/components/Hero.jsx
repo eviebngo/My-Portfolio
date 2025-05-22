@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import styles from './Hero.module.css';
+import PlaneWithDottedLine from './PlaneWithDottedLine';
 
-const Hero = ({ animate }) => {
+const Hero = ({ animate, onFly }) => {
   // Animate the name's opacity: 1 at top, 0 after 200px scroll
   const { scrollY } = useScroll();
   const nameOpacity = useTransform(scrollY, [0, 200], [1, 0]);
@@ -26,9 +27,10 @@ const Hero = ({ animate }) => {
           With a computer science and business background, I specialize in designing innovative products that address real-world problems.
         </p>
         <a href="#contact" className={styles.cta}>Get in Touch</a>
+        <PlaneWithDottedLine onFly={onFly} />
       </div>
     </section>
-  );
+);
 };
 
 export default Hero; 

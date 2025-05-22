@@ -1,18 +1,14 @@
 .hero {
   width: 100%;
   min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: transparent;
-  padding: 100px 0 60px 0;
+  padding: 100px 0 60px 48px;
 }
 
 .content {
   max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
   color: #22223b;
+  margin-left: 0;
 }
 
 .name {
@@ -87,4 +83,36 @@
   .content {
     padding: 0 1rem;
   }
+}
+
+.dottedLineWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2.5rem 0 0.5rem 0;
+  position: relative;
+}
+
+.dottedLine {
+  flex: 1;
+  height: 0;
+  border-top: 3px dotted #a6c1ee;
+  margin-left: 16px;
+  opacity: 0.7;
+}
+
+.planeIcon {
+  background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #a6c1ee33;
+  cursor: grab;
+  border: 2px solid #fff;
+  z-index: 2;
+  position: relative;
 } 

@@ -63,7 +63,7 @@ const About = () => {
               top: glowY
             }}
           ></motion.div>
-        </div>
+                    </div>
         <div className={styles.aboutText}>
           <motion.h2
             initial="hidden"
@@ -83,7 +83,7 @@ const About = () => {
             I love <motion.span whileHover={{ scale: 1.3, rotate: -10 }} className={styles.icon}><FaStar /></motion.span> creative problem solving, <motion.span whileHover={{ scale: 1.3, rotate: 10 }} className={styles.icon}><BsPersonWorkspace /></motion.span> collaborating with teams, and <motion.span whileHover={{ scale: 1.3, rotate: 8 }} className={styles.icon}><CgWebsite /></motion.span> designing beautiful interfaces.<br/>
             When I'm not working, you can find me exploring new cafes, sketching, or hiking!
           </motion.p>
-        </div>
+                    </div>
       </motion.div>
     </section>
   );
